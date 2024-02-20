@@ -80,61 +80,62 @@ const App = () => {
     }
   };
 
-  const changeBackground = (weatherCondition) => {
-    let backgroundColor;
-
+  function changeBackground(weatherCondition) {
+    let filter;
+  
     switch (weatherCondition.toLowerCase()) {
       case 'clouds':
-        backgroundColor = '#b0c4de'; // Light steel blue
+        filter = 'hue-rotate(180deg) saturate(200%)'; 
         break;
       case 'clear':
-        backgroundColor = '#87ceeb'; // Sky blue
+        filter = 'hue-rotate(0deg) saturate(100%)';
         break;
       case 'rain':
-        backgroundColor = '#4682b4'; // Steel blue
+        filter = 'brightness(70%)';
         break;
       case 'drizzle':
-        backgroundColor = '#708090'; // Slate gray
+        filter = 'contrast(150%)';
         break;
       case 'thunderstorm':
-        backgroundColor = '#2f4f4f'; // Dark slate gray
+        filter = 'hue-rotate(45deg) saturate(150%)';
         break;
       case 'snow':
-        backgroundColor = '#f0ffff'; // Azure
+        filter = 'brightness(150%)';
         break;
       case 'mist':
-        backgroundColor = '#d3d3d3'; // Light grey
+        filter = 'contrast(80%)';
         break;
       case 'smoke':
-        backgroundColor = '#dcdcdc'; // Gainsboro
+        filter = 'brightness(50%)'; 
         break;
       case 'haze':
-        backgroundColor = '#f5deb3'; // Wheat
+        filter = 'contrast(90%)';
         break;
       case 'dust':
-        backgroundColor = '#deb887'; // Burlywood
+        filter = 'contrast(120%)';
         break;
       case 'fog':
-        backgroundColor = '#e6e6fa'; // Lavender
+        filter = 'contrast(70%)';
         break;
       case 'sand':
-        backgroundColor = '#eedd82'; // Gold
+        filter = 'contrast(110%)';
         break;
       case 'ash':
-        backgroundColor = '#808080'; // Gray
+        filter = 'brightness(60%)';
         break;
       case 'squall':
-        backgroundColor = '#add8e6'; // Light blue
+        filter = 'hue-rotate(90deg) saturate(150%)';
         break;
       case 'tornado':
-        backgroundColor = '#ff6347'; // Tomato
+        filter = 'hue-rotate(120deg) saturate(200%)';
         break;
       default:
-        backgroundColor = '#f0f0f0'; // Default background color
+        filter = ''; 
     }
-
-    document.body.style.backgroundColor = backgroundColor;
-  };
+  
+    document.body.style.filter = filter;
+  }
+  
 
   return (
     <div className="App">

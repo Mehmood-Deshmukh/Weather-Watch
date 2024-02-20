@@ -1,16 +1,17 @@
 .weather-info-container {
-    text-align: center;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-    margin: 2vh;
-  }
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 2vh;
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+}
   
   .location {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: #000000;
   }
   
   .date {

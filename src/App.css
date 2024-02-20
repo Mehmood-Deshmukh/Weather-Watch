@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
 .App {
   text-align: center;
-  font-family: "Kode Mono", monospace;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 h1 {
@@ -10,10 +10,10 @@ h1 {
 
 .weather-container {
   margin-top: 20px;
-  background-color: #fff;
+  background: rgba(255, 255, 255, 0.15);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(72, 72, 73, 0.37);
   display: inline-block;
 }
 
@@ -21,15 +21,20 @@ h1 {
   color: red;
 }
 
+input {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
 input[type="text"] {
   padding: 8px;
   width: 200px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  margin-right: 10px;
+  margin: 1rem;
 }
 
 button {
+  font-family: "Kumbh Sans", sans-serif;
   padding: 8px 20px;
   margin: 0 1px;
   background-color: #4682b4;
@@ -37,6 +42,8 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin: 1rem;
+  filter: grayscale();
 }
 
 button:hover {
@@ -56,7 +63,7 @@ button:hover {
 
 @media (max-width: 768px) {
   input[type="text"] {
-    width: 100%;
+    width: 80%;
     margin-bottom: 10px;
   }
 }
@@ -65,6 +72,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   height: 100px;
+  filter: grayscale();
 }
 
 .loader {

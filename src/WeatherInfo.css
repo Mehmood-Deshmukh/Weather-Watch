@@ -1,0 +1,53 @@
+.weather-info-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    margin: 2vh;
+  }
+  
+  .location {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .date {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .weather-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .left-column, .right-column {
+    flex: 1;
+  }
+  
+  .temperature {
+    font-size: 36px;
+    margin: 10px 0;
+    color: #ff5722; /* Orange color for temperature */
+  }
+  
+  .feels-like, .humidity, .wind-speed, .visibility, .pressure, .sunrise, .sunset {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #666; /* Gray color for other details */
+  }
+  
+  .description {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #1976d2; /* Blue color for description */
+  }
+  
+  .sunrise-sunset {
+    margin-top: 20px;
+  }
+  

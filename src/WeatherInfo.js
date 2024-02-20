@@ -1,4 +1,5 @@
 import React from 'react';
+import './WeatherInfo.css';
 
 const WeatherInfo = ({ weatherData }) => {
   const { name, main, weather, wind, visibility, sys } = weatherData;
@@ -9,19 +10,27 @@ const WeatherInfo = ({ weatherData }) => {
   const sunsetTime = new Date(sys.sunset * 1000).toLocaleTimeString('en-US');
 
   return (
-    <>
-      <h2>{`Weather in ${name}`}</h2>
-      <p>{`Date and Time: ${formattedDate}`}</p>
-      <p>{`Temperature: ${main.temp}°C`}</p>
-      <p>{`Feels Like: ${main.feels_like}°C`}</p>
-      <p>{`Description: ${weather[0].description}`}</p>
-      <p>{`Humidity: ${main.humidity}%`}</p>
-      <p>{`Wind Speed: ${wind.speed} m/s`}</p>
-      <p>{`Visibility: ${visibility} meters`}</p>
-      <p>{`Pressure: ${main.pressure} hPa`}</p>
-      <p>{`Sunrise: ${sunriseTime}`}</p>
-      <p>{`Sunset: ${sunsetTime}`}</p>
-    </>
+    <div className="weather-info-container">
+      <h2 className="location">{`Weather in ${name}`}</h2>
+      <p className="date">{`Date and Time: ${formattedDate}`}</p>
+      <div className="weather-details">
+        <div className="left-column">
+          <p className="temperature">{`${Math.round(main.temp)}°C`}</p>
+          <p className="feels-like">{`Feels Like: ${Math.round(main.feels_like)}°C`}</p>
+          <p className="description">{weather[0].description}</p>
+        </div>
+        <div className="right-column">
+          <p className="humidity">{`Humidity: ${main.humidity}%`}</p>
+          <p className="wind-speed">{`Wind Speed: ${wind.speed} m/s`}</p>
+          <p className="visibility">{`Visibility: ${visibility} meters`}</p>
+          <p className="pressure">{`Pressure: ${main.pressure} hPa`}</p>
+        </div>
+      </div>
+      <div className="sunrise-sunset">
+        <p className="sunrise">{`Sunrise: ${sunriseTime}`}</p>
+        <p className="sunset">{`Sunset: ${sunsetTime}`}</p>
+      </div>
+    </div>
   );
 };
 

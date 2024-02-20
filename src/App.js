@@ -22,6 +22,7 @@ const App = () => {
         throw new Error('Location not found');
       }
       const data = await response.json();
+      console.log(data);
       setWeatherData(data);
       setError('');
       changeBackground(data.weather[0].main); // Change background color based on weather

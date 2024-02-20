@@ -51,6 +51,7 @@ const App = () => {
     }
   };
   const getCurrentLocation = () => {
+    setLoading(true)
     console.log("clicked")
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(position => {

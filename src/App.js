@@ -139,7 +139,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <img src={logo} alt='logo'className='logo'/>
+      {/* <img src={logo} alt='logo'className='logo'/> */}
+      <h1 className="title">Weather Watch</h1>
       <div className="weather-container">
         <WeatherForm getWeather={getWeather} getCurrentLocation={getCurrentLocation}/>
         {loading && <Loader />}

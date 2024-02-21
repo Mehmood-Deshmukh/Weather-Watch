@@ -19,10 +19,10 @@
     display: flex;
     justify-content: space-around;
     max-height: 50vh;
-    overflow: scroll;
   }
   
   .forecast-item {
+    cursor: pointer;
     text-align: center;
     padding: 10px;
     border-radius: 8px;
@@ -57,5 +57,65 @@
     .forecast-list{
         flex-direction: column;
         align-items: center;
+        overflow: scroll;
+        justify-content: flex-start;
+        flex-direction: column;
     }
+    .tooltip{
+      display: none !important;
+    }
+  }
+
+  .forecast-item {
+    position: relative;
+    width: 120px;
+    height: 180px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: -150px;
+    /* left: 50%; */
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.763);
+    backdrop-filter: blur(40px);
+    /* background-color: #fff; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .column {
+    flex: 1;
+    padding: 0 10px;
+  }
+  
+  .column p {
+    margin: 5px 0;
+    display: flex;
+  }
+
+  .column > p > i {
+    margin: 0 1rem;
   }

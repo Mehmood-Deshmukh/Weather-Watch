@@ -5,7 +5,7 @@ import Forecast from './Forecast';
 import ErrorMessage from './ErrorMessage';
 import Loader from './Loader';
 import './App.css';
-
+import logo from './assets/logo.png';
 const App = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [forecastData, setForecastData] = useState(null);
@@ -139,7 +139,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Weather App</h1>
+      <img src={logo} alt='logo'className='logo'/>
       <div className="weather-container">
         <WeatherForm getWeather={getWeather} getCurrentLocation={getCurrentLocation}/>
         {loading && <Loader />}

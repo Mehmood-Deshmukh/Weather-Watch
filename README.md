@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Weather Watch Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This is a Weather Watch web app built using React.js. It utilizes the OpenWeather API to provide real-time weather information such as temperature, humidity, visibility, wind speed, and pressure. Additionally, it provides a forecast for upcoming days. The app also features auto-suggestion for cities to make it easier for users to search for locations.
 
-## Available Scripts
+## Features
+- Real-time weather information retrieval using the OpenWeather API.
+- Display of current temperature, humidity, visibility, wind speed, and pressure.
+- Forecast for upcoming days.
+- Auto-suggestion for city search to improve user experience.
+- Responsive design for seamless usage across various devices.
 
-In the project directory, you can run:
+## Deployed on
+- [vercel](https://weather-watchs.vercel.app/)
 
-### `npm start`
+### Requirements
+-   node
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repo
 
-### `npm test`
+    ```
+    git clone https://github.com/Mehmood-Deshmukh/Weather-Watch
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Install NPM packages
 
-### `npm run build`
+    ```
+    npm install
+    ```
+3. Start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```
+    npm start
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contributing
 
-### `npm run eject`
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+-   If you have suggestions for adding or removing features, feel free to [open an issue](https://github.com/Mehmood-Deshmukh/Weather-Watch/issues/new) to discuss it, or directly create a pull request with necessary changes.
+-   Create individual PR for each suggestion.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Creating A Pull Request
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## About the Developer
 
-## Learn More
+WeatherWatch is developed by **Mehmood Deshmukh**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Connect with Me
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- LinkedIn: [Mehmood Deshmukh](https://www.linkedin.com/in/mehmood-deshmukh-93533a2a7/)
+- GitHub: [Mehmood-Deshmukh](https://github.com/Mehmood-Deshmukh)
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to reach out for collaboration, feedback, or just to say hi!

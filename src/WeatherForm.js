@@ -4,7 +4,6 @@ import './WeatherForm.css';
 const WeatherForm = ({ getWeather, getCurrentLocation }) => {
   const [location, setLocation] = useState('');
   const [cityOptions, setCityOptions] = useState([]);
-  const apiKey = '0928d8aa86ee7325e1ba51e2e5769035';
   useEffect(() => {
     const fetchCities = async () => {
       if (location.trim() !== '') {

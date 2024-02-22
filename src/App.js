@@ -12,8 +12,6 @@ const App = () => {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const apiKey = '0928d8aa86ee7325e1ba51e2e5769035';
-
   const getWeather = async (location) => {
     try {
       setLoading(true);
